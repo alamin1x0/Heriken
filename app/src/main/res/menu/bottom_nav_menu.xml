@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/categoryFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="Category"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/cartsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Catrs"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/wishlistFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="Watchlist"
+        app:showAsAction="always" />
+
+
+</menu>

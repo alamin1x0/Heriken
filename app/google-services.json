@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "85713702811",
+    "firebase_url": "https://admob-d6d05-default-rtdb.firebaseio.com",
+    "project_id": "admob-d6d05",
+    "storage_bucket": "admob-d6d05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85713702811:android:c1ae4391e25d901f02db3e",
+        "android_client_info": {
+          "package_name": "com.developeralamin.admob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85713702811-h1sn3dlkveu0i8huc1b9b54k8f8abtdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcYuj0YaGLFHlkA2SeGznMBUBlEsMMbnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85713702811-h1sn3dlkveu0i8huc1b9b54k8f8abtdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85713702811:android:520f5a40dd74e11102db3e",
+        "android_client_info": {
+          "package_name": "com.developeralamin.books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85713702811-h1sn3dlkveu0i8huc1b9b54k8f8abtdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcYuj0YaGLFHlkA2SeGznMBUBlEsMMbnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85713702811-h1sn3dlkveu0i8huc1b9b54k8f8abtdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85713702811:android:aabfd3cc7fc48d8f02db3e",
+        "android_client_info": {
+          "package_name": "com.developeralamin.heriken"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85713702811-h1sn3dlkveu0i8huc1b9b54k8f8abtdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcYuj0YaGLFHlkA2SeGznMBUBlEsMMbnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85713702811-h1sn3dlkveu0i8huc1b9b54k8f8abtdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
