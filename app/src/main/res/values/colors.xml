@@ -11,4 +11,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="app_titile">#555</color>
     <color name="shop_color">#39404a</color>
+    <color name="new_item">#70c332</color>
+    <color name="rating">#ffab10</color>
 </resources>

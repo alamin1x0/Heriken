@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
 import android.view.ViewGroup
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
@@ -115,6 +116,7 @@ class HomeFragment : Fragment() {
                 }
 
                 binding.productRecyclerview.adapter = ProductAdapter(requireContext(), list)
+                binding.progressBarId.visibility = GONE
 
             }
     }

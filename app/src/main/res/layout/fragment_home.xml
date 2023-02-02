@@ -227,6 +227,14 @@
 
             </RelativeLayout>
 
+
+            <ProgressBar
+                android:id="@+id/progressBarId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:theme="@style/ProgressBar" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/productRecyclerview"
                 android:layout_width="match_parent"

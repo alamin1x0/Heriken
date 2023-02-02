@@ -10,4 +10,5 @@ data class AddProductModel(
     val productMrp: String? = "",
     val productSp: String? = "",
     val productImages: String?="",
+
 )

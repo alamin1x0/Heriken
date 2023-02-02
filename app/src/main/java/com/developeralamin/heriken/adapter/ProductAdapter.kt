@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.developeralamin.heriken.databinding.LayoutProductItemBinding
@@ -25,12 +26,14 @@ class ProductAdapter(val context: Context, val list: ArrayList<AddProductModel>)
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val data = list[position]
 
-        holder.binding.textView2.text = data.productName
-        holder.binding.textView3.text = data.productCategoryImg
-        holder.binding.button.text = data.productMrp
-        holder.binding.button2.text = data.productSp
-
+        holder.binding.textView3.text = data.productName
+        holder.binding.textView4.text = data.productMrp
+        holder.binding.textView5.text = data.productSp
         Glide.with(context).load(data.productImages).into(holder.binding.imageView2)
+
+        holder.binding.addBtn.setOnClickListener {
+            Toast.makeText(context, "Product Added", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
