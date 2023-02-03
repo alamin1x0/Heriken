@@ -32,7 +32,6 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -93,7 +92,6 @@
                         android:layout_height="40dp"
                         android:src="@drawable/ic_baseline_send_24" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -116,7 +114,6 @@
                             android:textSize="15sp" />
 
                     </LinearLayout>
-
 
                 </LinearLayout>
 
@@ -161,7 +158,6 @@
 
                     </LinearLayout>
 
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -181,7 +177,6 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ic_baseline_send_24" />
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -227,12 +222,12 @@
 
             </RelativeLayout>
 
-
             <ProgressBar
                 android:id="@+id/progressBarId"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="5dp"
                 android:theme="@style/ProgressBar" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -243,7 +238,6 @@
                 android:nestedScrollingEnabled="true"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/layout_product_item" />
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
