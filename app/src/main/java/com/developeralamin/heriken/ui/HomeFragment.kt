@@ -1,11 +1,14 @@
 package com.developeralamin.heriken.ui
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
 import android.view.ViewGroup
+import androidx.appcompat.app.ActionBar
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.developeralamin.heriken.R
@@ -32,6 +35,7 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
+
         val imageList = ArrayList<SlideModel>()
         imageList.add(
             SlideModel(
@@ -55,7 +59,16 @@ class HomeFragment : Fragment() {
 
         getBranceItems()
 
+        referesApp()
+
         return binding.root
+    }
+
+    private fun referesApp() {
+        binding.swipeRefresLayout.setOnRefreshListener {
+
+            binding.swipeRefresLayout.isRefreshing = false
+        }
     }
 
     private fun getBranceItems() {
@@ -114,7 +127,7 @@ class HomeFragment : Fragment() {
                     val data = doc.toObject(AddProductModel::class.java)
                     list.add(data!!)
                 }
-
+                
                 binding.productRecyclerview.adapter = ProductAdapter(requireContext(), list)
                 binding.progressBarId.visibility = GONE
 

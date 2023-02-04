@@ -13,4 +13,5 @@
     <color name="shop_color">#39404a</color>
     <color name="new_item">#70c332</color>
     <color name="rating">#ffab10</color>
+    <color name="login_bg">#e8e8e8</color>
 </resources>

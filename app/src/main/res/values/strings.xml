@@ -6,5 +6,6 @@
     <string name="close">clos</string>
 
     <style name="open">opne</style>
+
     <style name="close">close</style>
 </resources>
