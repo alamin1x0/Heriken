@@ -23,6 +23,13 @@ import com.developeralamin.heriken.model.NewProductModel
 import com.developeralamin.heriken.model.ShopbyModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class HomeFragment : Fragment() {
@@ -34,6 +41,14 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
+
+
+        CoroutineScope(Dispatchers.Main).launch {
+            while (true) {
+                dateTimeUpdate();
+                delay(1000L)
+            }
+        }
 
 
         val imageList = ArrayList<SlideModel>()
@@ -127,10 +142,18 @@ class HomeFragment : Fragment() {
                     val data = doc.toObject(AddProductModel::class.java)
                     list.add(data!!)
                 }
-                
+
                 binding.productRecyclerview.adapter = ProductAdapter(requireContext(), list)
                 binding.progressBarId.visibility = GONE
 
             }
+    }
+
+    private fun dateTimeUpdate() {
+
+        val currentDate: String =
+            SimpleDateFormat("HH : mm : ss", Locale.getDefault()).format(Date())
+        binding.datetime.setText(currentDate)
+
     }
 }
